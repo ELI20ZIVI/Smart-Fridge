@@ -1,0 +1,173 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #ddd;
+}
+
+.dashboard {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #222;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+#temperature,
+#humidity,
+#fridgeStatus {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #909090;
+}
+
+#temperatureValue,
+#humidityValue,
+#fridgeStatusValue {
+    font-weight: bold;
+    color: #008080;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+
+.column h2 {
+    font-size: 20px;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.product-list {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-list-item {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #008080;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-list-item .product-name,
+.product-list-item .product-quantity {
+    flex: 1;
+    color: #008080;
+    text-align: center;
+    padding: 5px;
+}
+
+/* .product-list-item .product-name {
+    flex: 1;
+    color: #008080;
+    padding-right: 5px;
+}
+
+.product-list-item .product-quantity {
+    flex: 1;
+    color: #008080;
+} */
+
+.legend {
+    display: flex;
+    justify-content: space-between;
+    background-color: #444;
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    color: #ddd;
+}
+
+.legend-item {
+    flex: 1;
+    font-weight: bold;
+}
+
+.wishlist-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+    #desiredProducts,
+    #wishlist-form {
+        flex-basis: 100%;
+    }
+}
+
+.wishlist-form-item {
+    margin-bottom: 10px;
+}
+
+.wishlist-form-item label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ddd;
+}
+
+.wishlist-form-item select,
+.wishlist-form-item input {
+    width: 60%; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #008080;
+    border-radius: 4px;
+    background-color: #333;
+    color: #ddd;
+}
+
+.wishlist-form-item.center {
+    text-align: center;
+}
+
+.wishlist-form-item button {
+    padding: 8px 16px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: #008080;
+    color: #ddd;
+    border: 1px solid #008080;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.wishlist-form-item button:hover {
+    background-color: #006666; /* Change the color on hover as needed */
+    border-color: #006666; /* Change the border color on hover as needed */
+}
+
+.wishlist-form-space {
+    height: 20px; /* Adjust the height to control the space between the two divs */
+}
+
+.custom-remove-button {
+    color: red;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: -10px; /* Adjust the margin-left as needed */
+}
+
+.custom-remove-button:hover {
+    text-decoration: underline;
+    color: darkred;
+}

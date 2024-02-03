@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Fridge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="dashboard">
+    <h1>IoT Fridge</h1>
+
+    <div class="columns">
+        <div class="column" id="fridgeInfo">
+            <h2>Fridge Information</h2>
+            <div id="temperature">Temperature: <span id="temperatureValue">--</span> °C</div>
+            <div id="humidity">Umidity: <span id="humidityValue">--</span>%</div>
+            <div id="fridgeStatus">Fridge Status: <span id="fridgeStatusValue">--</span></div>
+
+            <!-- Aggiungi spazio tra i due div -->
+            <div class="wishlist-form-space"></div>
+
+            <!-- Form for Adding Products to Wishlist -->
+            <div id="wishlist-form">
+                <h2>Add / Modify Product to Wishlist</h2>
+                
+                <div class="wishlist-form-item">
+                    <label for="productName">Product:</label>
+                    <select id="productName">
+                        <!-- Options for product names will be added dynamically here -->
+                    </select>
+                </div>
+        
+                <div class="wishlist-form-item">
+                    <label for="productQuantity">Quantity:</label>
+                    <input type="number" id="productQuantity" min="1" value="1">
+                </div>
+        
+                <div class="wishlist-form-item center">
+                    <button onclick="addToWishlist()" class="small-button">Add / Modify</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="column" id="productList">
+            <h2>Products in the Fridge</h2>
+            <ul class="product-list" id="productListItems">
+                <!-- Gli elementi della lista dei prodotti saranno aggiunti dinamicamente qui -->
+            </ul>
+        </div>
+
+        <!-- Desired Products List -->
+        <div class="column" id="desiredProducts">
+            <h2>Wishlist Products</h2>
+            <ul class="product-list" id="desiredProductsList">
+                <!-- Desired products will be added dynamically here -->
+            </ul>
+        </div>
+        
+        <div class="column" id="missingProducts">
+            <h2>Missing Products</h2>
+            <ul class="product-list" id="missingProductsList">
+                <!-- Gli elementi della lista dei prodotti mancanti saranno aggiunti dinamicamente qui -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

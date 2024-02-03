@@ -45,15 +45,14 @@ The project is developed by a team of three students of the University of Trento
 - [Node v20](#install-nvm)
 - Texas Instruments MSP432 board (optional)
 
-![Interface Options](./IoT_circuit_bb.png)
+![Interface Options](./.images/IoT_circuit_bb.png)
 
 ## Project Layout
 ```
-├── databaseInit.py
 ├── README.md
 ├── MSP432
-│   ├── raspi-config3.jpg
-│   └── raspi-config4.jpg
+│   └── MSP_Sensors
+│       └── MSP_Sensors.ino
 └── backend
     ├── backend@1.0.0
     ├── image.jpg
@@ -81,7 +80,7 @@ The project is developed by a team of three students of the University of Trento
 
 ## MSP432 - Initial Configuration
 
-The [Energia IDE](https://energia.nu/) has been used to develop the code for the MSP432 board. The code to flash the board is available in the git repository in the `MSP432_Sensors` folder.
+The [Energia IDE](https://energia.nu/) has been used to develop the code for the MSP432 board. The project to flash the board is available in the git repository in the `MSP432` folder.
 
 
 ## Raspberry PI 4 - Initial Configuration
