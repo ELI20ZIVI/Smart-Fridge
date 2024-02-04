@@ -54,14 +54,10 @@ The project is developed by a team of three students of the University of Trento
 │   └── MSP_Sensors
 │       └── MSP_Sensors.ino
 └── backend
-    ├── backend@1.0.0
-    ├── image.jpg
     ├── index.js
-    ├── nodemon
     ├── package.json
-    ├── package-lock.json
-    ├── yolov8m.pt
     ├── AI
+    │   ├── Products.py
     │   └── imageRecognition.py
     ├── app
     │   ├── app.js
@@ -75,7 +71,6 @@ The project is developed by a team of three students of the University of Trento
         ├── index.css
         ├── index.html
         └── index.js
-
 ```
 
 ## MSP432 - Initial Configuration
@@ -333,8 +328,8 @@ The following table shows the main API available in the backend:
 | PUT | `/wishlist/removeProduct` | `name: string` | Remove a product from the wishlist |
 
 ## Links
-- [Project Video]()
-- [Project Presentation]()
+- [Project Video](https://youtu.be/PD7e5-3tCJU)
+- [Project Presentation](https://drive.google.com/file/d/1xx9OgkR-GmFK-imysnluCju10C1f8HiI/view?usp=sharing)
 
 ## Team Members
 In the context of this project all the team members have collaborated to the development of the project and helped each other in the different tasks.
