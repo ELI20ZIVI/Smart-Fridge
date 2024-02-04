@@ -1,4 +1,4 @@
-#include <DHT_U.h>
+#include "DHT_U.h"
 #include <Energia.h>
 
 #define DHTPIN   11   // Pin collegato al sensore DHT
@@ -38,7 +38,7 @@ void setup() {
 
 void loop() {
 
-  if (counter == 50) {
+  if (counter == 10) {
     sensors_event_t event;
     // Read temperature value
     dht.temperature().getEvent(&event);
@@ -94,6 +94,6 @@ void loop() {
     closed = 0;
   }
 
-  delay(100);
+  delay(500);
   counter ++;
 }

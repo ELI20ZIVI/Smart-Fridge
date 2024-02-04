@@ -52,7 +52,13 @@ The project is developed by a team of three students of the University of Trento
 ├── README.md
 ├── MSP432
 │   └── MSP_Sensors
-│       └── MSP_Sensors.ino
+|       ├── MSP_Sensors.ino
+|       ├── Adafruit_Sensor.h
+|       ├── DHT.h
+|       ├── DHT_U.h
+|       ├── DHT.cpp
+|       └── DHT_U.cpp
+│       └──
 └── backend
     ├── index.js
     ├── package.json
