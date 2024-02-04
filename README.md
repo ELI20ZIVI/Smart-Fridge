@@ -211,9 +211,9 @@ PATH=$PATH:/home/pi/.local/bin
 ``` 
 
 ### Pull the GitHub project folder and install the packages for the backend
-Download the project folder from [GitHub](https://github.com/ELI20ZIVI/IoT-Fridge):
+Download the project folder from [GitHub](https://github.com/ELI20ZIVI/Smart-Fridge):
 ```bash
-git pull https://github.com/ELI20ZIVI/IoT-Fridge
+git pull https://github.com/ELI20ZIVI/Smart-Fridge
 cd backend
 npm install
 ```
