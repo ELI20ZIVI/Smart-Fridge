@@ -83,7 +83,7 @@ function updateProductList(listId, products, removeButton) {
             // Create remove button with a cross inside
             const removeButton = document.createElement("button");
             removeButton.classList.add("remove-button", "custom-remove-button");
-            removeButton.innerHTML = '<i class="fas fa-times"></i>'; // Assuming you are using Font Awesome for the cross icon            
+            removeButton.innerHTML = '<i class="fas fa-times"></i>';         
 
             // Add event listener to remove the item when the button is clicked
             removeButton.addEventListener("click", function() {
@@ -135,7 +135,6 @@ async function getProducts() {
         const data = await response.json();
 
         if (data) {
-            // Assuming data has a structure similar to the JSON you provided
             fridgeData.products = data;
         }
 
@@ -157,7 +156,6 @@ async function getAvailableProducts() {
         const data = await response.json();
 
         if (data) {
-            // Assuming data has a structure similar to the JSON you provided
             fridgeData.availableProducts = data;
         }
 
@@ -277,7 +275,7 @@ function handlePageLoad() {
         select.value = fridgeData.selectedProduct;
     }
 
-    // Aggiorna localStorage quando viene cambiato il valore del select
+    // Aggiorna selectedProduct quando viene cambiato il valore del select
     select.addEventListener("change", function() {
         fridgeData.selectedProduct = select.value;
     });

@@ -98,9 +98,6 @@ pythonProcess.on("close", (code) => {
   pythonProcess.stdin.end(); // Ensure that stdin is closed when the script exits
 });
 
-setInterval(() => {
-  pythonProcess.stdin.write("takePhoto\n");
-}, 5000);
 // Asynchronous function to save sonsors data to the database
 async function saveData(data) {
   try {
@@ -124,11 +121,11 @@ async function saveData(data) {
     }
 
     // if the fridge door is being close i take a picture to the products
-    /*
     if (sensor.type == "door" && sensor.value == "closed") {
-      setTimeout(pythonProcess.stdin.write("takePhoto\n"), 3000);
+      setTimeout(()=>{pythonProcess.stdin.write("takePhoto\n");},
+       3000);
     }
-*/
+
     await sensor.save();
   } catch (error) {
     console.error(error);
